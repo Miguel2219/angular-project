@@ -1,2 +1,6 @@
 <p><input type="text" [(ngModel)]="imgParent" /></p>
 <app-img (loaded)="onLoaded($event)" [img]="imgParent"></app-img>
+
+@for(suplement of suplements; track suplement.id){
+    <app-product [suplement]="suplement"></app-product>
+}

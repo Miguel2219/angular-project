@@ -1,5 +1,7 @@
 @if (img){
-    <img width="200" (load)="imgLoaded()" (error)="imgError()" [src]="img">
+    <img (load)="imgLoaded()" (error)="imgError()" [src]="img">
 } @else {
-    <img width="200" [src]="imageDefault" alt="">
+    <img [src]="imageDefault" alt="">
 }
+
+<h3>{{counter}}</h3>
